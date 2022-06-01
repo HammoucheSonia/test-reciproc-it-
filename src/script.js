@@ -17,14 +17,14 @@ $(document).ready(function () {
         $("#result").empty();
         //ajouter la nationalite//
         //plus info : documentation api//
-        url = "https://randomuser.me/api/?results=4&gender=" +"&nat=" + selectedNationality;
+        url = "https://randomuser.me/api/?results=4" +"&nat=" + selectedNationality;
     });
 
     $('#nationality').on('change', function () {
         var p = "";
         $("#result").empty();
         selectedNationality = $('#nationality :selected').text();
-        url = "https://randomuser.me/api/?results=4&gender=" + "&nat=" + selectedNationality;
+        url = "https://randomuser.me/api/?results=4" + "&nat=" + selectedNationality;
         fetchInformation(url);
     });
 
